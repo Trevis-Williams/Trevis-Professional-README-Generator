@@ -1,4 +1,4 @@
-# Trevis Porfolio Page
+# Trevis Portfolio
 
   ![License](https://img.shields.io/badge/license-MIT-blue)
 
@@ -14,16 +14,16 @@
  - [License](#license)
   
   ## Contribution Guidelines
-  https://github.com/Trevis-Williams/Trevis-portfolio-Website
+  YOU DONT ITS MINE
   
   ##  Test Instructions
-  Test where done useing a live server and dev tool in chrome 
+  Test where done useing a live server and dev tools in chrome! 
   
   ## Installation Instructions
   No need for instaltion just follow the link!  https://trevis-williams.github.io/Trevis-portfolio-Website/
   
   ## Usage Information
-  This application is used to deopnstrate my talets as a devolper
+  I use the application as a showcase of my work!
   
 
 ## License
@@ -33,4 +33,4 @@ This project is licensed under the [MIT](url_to_license_text) license.
 
   ## Questions
   - GitHub: [Trevis-Williams](https://github.com/Trevis-Williams)
-  - Email: Rst1426@gmail.com
+  - Email: rst1426@gmail.com
