@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license){
-    const LicenseBadgeUrl = `![License](url_to_license_badge)`;
+    const LicenseBadgeUrl = `![License](https://img.shields.io/badge/license-${license}-blue)`;
     return LicenseBadgeUrl
   }
   return '';
@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license){
-    const LicenseLinkUrl = `[License](url_to_license_text)`;
+    const LicenseLinkUrl = `- [License](#license)`;
     return LicenseLinkUrl;
   }
   return '';
@@ -23,10 +23,9 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license){
     return `
-    ## License
+## License
     
-    This project is licensed under the [${license}](url_to_license_text) license.
-        `;
+This project is licensed under the [${license}](url_to_license_text) license. `;
   }
   return '';
 }
@@ -40,27 +39,38 @@ function generateMarkdown(data) {
   return `# ${data.projectName}
 
   ${licenseBadge}
-  
+
   ## Description
   ${data.description}
   
   ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
+  - [Usage](#usage-information)
   - [Questions](#questions)
+  - [Contribution Guidelines](#contribution-guidelines)
+  - [Test Instructions](#test-instructions)
+  - [Installation Instructions](#installation-instructions)
+ ${licenseLink}
   
-  ## Installation
+  ## Contribution Guidelines
+  ${data.contributions}
+  
+  ##  Test Instructions
+  ${data.test}
+  
+  ## Installation Instructions
   ${data.Installation}
   
-  ## Usage
-  - GitHub: [${data.gitHub}](https://github.com/${data.gitHub})
+  ## Usage Information
+  ${data.usage}
   
-  ## License
-  ${licenseSection}
-  `;
+${licenseSection}
+
+
+  ## Questions
+  - GitHub: [${data.gitHub}](https://github.com/${data.gitHub})
+  - Email: ${data.Email}`;
   }
 
 module.exports = generateMarkdown;
 
-module.exports = generateMarkdown;
+
